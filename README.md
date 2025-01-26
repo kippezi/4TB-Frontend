@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# 4TB-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+4TB-Frontend is the client-side component of the 4TB-Unity game system, developed using the **React** framework. It is responsible for managing player interactions during the game, including submitting answers to quiz questions. The frontend communicates with the backend (found in the `4TB-Backend` repository) to manage game state and display questions to players.
 
-## Available Scripts
+The frontend contains the following components:
+- **JoinForm**: A form used for players to join the game.
+- **AnswerFirstForm**: A form for players to submit their answer for the first question.
+- **AnswerSecondForm**: A form for players to submit their answer for the second question.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. [Project Overview](#project-overview)
+2. [Components](#components)
+3. [Installation](#installation)
+4. [Contributing](#contributing)
+5. [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Project Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4TB-Frontend is the part of the 4TB-Unity game that players interact with directly. Built with React, it provides dynamic and responsive forms for players to join the game and submit answers. The frontend communicates with the backend (4TB-Backend) to get game data and send responses, enabling a seamless multiplayer experience.
 
-### `npm run build`
+## Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application consists of the following main components:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. **JoinForm**
+   - **Description**: The `JoinForm` component allows players to join the game by providing their unique identifier (ID). The form submits the player’s information to the backend, which then associates them with the ongoing game session.
+   - **Functionality**: 
+     - Players can enter their name and choose a unique ID to join the game session.
+     - Once the form is submitted, the player’s information is sent to the backend, and they are added to the game session.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. **AnswerFirstForm**
+   - **Description**: The `AnswerFirstForm` component presents the first question of the game to the player. The player can select one of the two answer alternatives and submit their response.
+   - **Functionality**:
+     - Displays the first question with two alternatives (`alternativeA` and `alternativeB`).
+     - Submits the selected answer to the backend for evaluation and updates the game state.
 
-### `npm run eject`
+### 3. **AnswerSecondForm**
+   - **Description**: Similar to the first form, the `AnswerSecondForm` handles the second question of the game. Players provide their answer for the second question, which is submitted to the backend.
+   - **Functionality**:
+     - Displays the second question with the possible alternatives.
+     - Submits the selected answer to the backend for processing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Each of these components serves a specific part of the game and is linked to the backend for maintaining game state and managing player data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

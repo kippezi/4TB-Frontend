@@ -2,7 +2,7 @@
 
 4TB-Frontend is the client-side component of the 4TB-Unity game system, developed using the **React** framework. It is responsible for managing player interactions during the game, including submitting answers to quiz questions. The frontend communicates with the backend (found in the `4TB-Backend` repository) to manage game state and display questions to players.
 
-The frontend contains the following components in the **src folder**:
+The frontend contains the following components in the **src/components folder**:
 - **JoinForm**: A form used for players to join the game.
 - **AnswerFirstForm**: A form for players to submit their answer for the first question.
 - **AnswerSecondForm**: A form for players to submit their answer for the second question.

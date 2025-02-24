@@ -13,10 +13,6 @@ The frontend contains the following components in the **src folder**:
 
 1. [Project Overview](#project-overview)
 2. [Components](#components)
-3. [Installation](#installation)
-4. [Contributing](#contributing)
-5. [License](#license)
-
 ---
 
 ## Project Overview
